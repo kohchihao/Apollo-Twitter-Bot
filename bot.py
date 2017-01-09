@@ -8,8 +8,15 @@ import xml.etree.ElementTree as ET
 import urllib
 import csv
 
-from secret import FLICKR_KEY, FLICKR_SECRET, TWITTER_KEY, TWITTER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET
+#from secret import FLICKR_KEY, FLICKR_SECRET, TWITTER_KEY, TWITTER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET
 from config import USER_ID, TAGS, MIN_HEIGHT, MIN_WIDTH
+
+FLICKR_KEY = os.environ.get('FLICKR_KEY')
+FLICKR_SECRET = os.environ.get('FLICKR_SECRET')
+TWITTER_KEY = os.environ.get('TWITTER_KEY')
+TWITTER_SECRET = os.environ.get('TWITTER_SECRET')
+ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN')
+ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
 
 from apscheduler.schedulers.blocking import BlockingScheduler
 
